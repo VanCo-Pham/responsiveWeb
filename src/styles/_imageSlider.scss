@@ -1,0 +1,152 @@
+.imageSlider {
+    position: relative;
+    width: 80%;
+    // height: 80vh;
+    margin: auto;
+    .imageSlide, .slide-content, .slide-content {
+        overflow-y: hidden;
+        height: 42vw;
+        background-size: 65%;
+        background-position:  right ;
+        background-repeat: no-repeat;
+        display: none;
+        // display: flex;
+        // flex-direction: column;
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            &-info {
+                position: absolute;
+                left: 4vw;
+                // background: red;
+                height: 100%;
+                color: white;
+                max-width: 22vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h2 {
+                    font-size: 2rem;
+                    padding-bottom: 1rem;
+                }
+                p {
+                    line-height: 1.8rem;
+                    font-size: 1.3rem;
+                }
+                .highlight {
+                    color: rgb(104, 20, 20);
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+            span {
+                font-size: 3vw;
+                color: white;
+            }
+            
+        }
+    }
+    .slider-content-info-small {
+        display: none;
+    }
+    .slide1 {
+        background-image: url('../images/seed.jpg');
+        display: block;
+    }
+    .slide2 {
+        background-image: url('../images/pots.jpg');
+    }
+    .slide3 {
+        background-image: url('../images/sale.jpg');
+    }
+    .slide4 {
+        background-image: url('../images/orchid.jpg');
+    }
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0.5vw;
+        margin-top: -2vw;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        z-index: 2;
+        &:hover {
+            transform: scaleX(1.2);
+        }
+    }
+    #arrow-left {
+        border-width: 1.5vw 1.5vw 1.5vw 0;
+        left: -10%;
+        top: 50%;
+        margin-left: 3vw;
+        border-color: transparent white transparent transparent;
+    }
+    #arrow-right {
+        border-width: 1.5vw 0px 1.5vw 1.5vw;
+        right: -10%;
+        top: 50%;
+        margin-right: 3vw;
+        border-color: transparent  transparent transparent white;
+    }
+}
+.sliderAni {
+    animation: slideAniIn 3s ease !important;
+}
+
+@keyframes slideAniIn {
+    0% {
+        opacity: 0.1;
+        // transform: scaleY(0);
+        // transform: translateX(100%);
+        // transform: scaleX(0) scaleY(0);
+    }
+    100% {
+        opacity: 1;
+        // transform: scaleY(1);
+        // transform: translateX(0%);
+        // transform: scaleX(1) scaleY(1);
+
+    }
+}
+// @keyframes slideText {
+//     0% {
+//         transform: translateY(-100%)
+//     }
+//     100% {
+//         transform: translateY(0%)
+//     }
+// }
+
+@media (max-width: 730px) {
+
+    .imageSlider {
+        // background: red;
+        // display: flex;
+        position: relative;
+        // background: red;
+        .slide-content-info {
+            // background:rgb(104, 20, 20);
+            h2 {
+                display: none;
+            }
+            p {
+                display: none;
+            }
+                
+        }
+    }
+    .imageSlider .slider-content-info-small {
+        display: block;
+        padding: 0 1rem;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        color: black !important;
+        mix-blend-mode: lighten;
+        background: white;
+    }
+}

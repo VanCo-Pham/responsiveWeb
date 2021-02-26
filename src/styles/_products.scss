@@ -1,0 +1,38 @@
+@import 'color';
+.products-container {
+    // background: red;
+    width: 80%;
+    margin: auto;
+    .products-title {
+        margin-top: 3rem;
+        padding: 0.5rem;
+        color: white;
+        background: $dark-main;
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            padding-left: 1rem;
+        }
+        span {
+            padding-right: 1rem;
+        }
+    }
+    .products-grid {
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        padding: 1rem;
+        grid-auto-flow: dense;
+    }
+    .products-pagination {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding-bottom: 1rem;
+        border-radius: 0 0 5px 5px;
+    }
+}

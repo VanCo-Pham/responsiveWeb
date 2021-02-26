@@ -1,0 +1,107 @@
+@import 'color';
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-container {
+    width: 80%;
+    margin: 1rem auto !important;
+    background: $middle;
+    // background: red;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    position: relative;
+    .items-nav {
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-start;
+        padding-top: 1rem;
+        position: sticky;
+        top: 2rem ;
+        flex: 1;
+        h2 {
+            padding-bottom: 1rem;
+            color: $light-main;
+            text-align: center;
+        }
+        ul {
+            width: 100%;
+            li {
+                padding:  0.5rem;
+                color: $light-main;
+                cursor: pointer;
+                text-align: center;
+                &:hover {
+                    color:rgb(83, 77, 77);
+                }
+            }
+        }
+        .product-actived {
+            color: $strong;
+            font-weight: 600;
+            background: $dark-main;
+            &:hover {
+                color: $strong;
+            }
+        }
+    }
+    .items-detail {
+        flex: 3;
+        display: grid;
+        width: 100%;
+        grid-gap: 1rem;
+        // padding: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-auto-rows: 200px;
+        background: $dark-main;
+        position: relative;
+        padding: 10px;
+        .items-details {
+            // background: red;
+            position: relative;
+            @include flex-center();
+            flex-direction: column;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                max-height: 100%;
+                // object-fit: contain;
+                transition: all 0.4s ease;
+                &:hover {
+                    transform: scaleX(1.05) scaleY(1.05);
+                }
+            }
+            .item-action {
+                position: absolute;
+                width: 100%;
+                // transform: translateY(-120%) translateX(65%);
+                bottom: 0;
+                color: white;
+                font-weight: 600;
+                padding: 5px;
+                // border: 1px solid $main-text-color;
+                text-align: center;
+                cursor: pointer;
+                &:hover {
+                    color: rgb(204, 159, 159);
+                }
+            }
+        }
+    }
+    // 
+    
+}
+
+
+@media (max-width: 600px) {
+   
+    .items-container .item-detail {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+        grid-auto-rows:120px !important;
+    }
+}

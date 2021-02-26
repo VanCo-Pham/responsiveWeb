@@ -1,0 +1,50 @@
+@import 'color';
+
+.footer {
+    &-info {
+        background: $dark-main;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1vh;
+        font-weight: 600;
+        &-item {
+            // flex: 1;
+            color: $light-main;
+            // padding: 0 5vh;
+
+        }
+    }
+    &-grid {
+        display: grid;
+        // margin:  0 2rem;
+        grid-gap: 1rem;
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        // grid-auto-rows: 280px;
+        grid-auto-flow: dense;
+        width: 80%;
+        margin: auto;
+    }
+    .footer-item {
+        // background: yellow;
+        // margin: 0 1rem;
+        // min-width: 200px;
+        padding:  1rem;
+        display: flex;
+        flex-direction: column;
+        p {
+            margin:  0.5rem 0;
+        }
+        &-number {
+            color: green;
+            font-weight: 600;
+            // background: red;
+        }
+    }
+    &-copyright {
+        text-align: center;
+        color: $dark-main;
+        padding: 5px;
+    }
+}

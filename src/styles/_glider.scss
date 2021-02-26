@@ -1,0 +1,38 @@
+.glider-contain {
+  margin: 2rem 0;
+}
+
+figure {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+  padding: 0.7rem;
+  blockquote {
+    padding: 1rem;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+  }
+  figcaption {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-style: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+  }
+}
+
+.glider-prev {
+  font-size: 2rem !important;
+  left: 2rem !important;
+  top: calc(35%) !important;
+}
+.glider-next {
+  font-size: 2rem !important;
+  right: 2rem !important;
+  top: calc(35%) !important;
+}

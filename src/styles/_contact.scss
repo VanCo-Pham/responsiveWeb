@@ -1,0 +1,19 @@
+.contact {
+    width: 80%;
+    height: 100vh;
+    margin: 2rem auto;
+    // display: flex;
+    // background: lightcyan;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    h3 {
+        // background : red;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+}

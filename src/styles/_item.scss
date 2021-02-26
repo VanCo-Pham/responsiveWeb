@@ -1,0 +1,65 @@
+@import 'helper';
+@import 'color';
+
+.item-container {
+    background: lightblue;
+    // @include flex-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // align-items: stretch;
+
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    // width: 30vw;
+    // height: 30%;
+    margin: 1vw;
+    &:hover {
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+
+    }
+    .item-image {
+        // display: none;
+        // height: 50vh;
+        flex: 1;
+        // background: red;
+        // color: white;
+    }
+    .item-first {
+        @include flex-center;
+        justify-content: space-evenly;
+        background: $middle;
+        width: 100%;
+        padding: 5px;
+        // margin-bottom: auto;
+    }
+    .item-name {
+        // color: white;
+        font-weight: 600;
+    }
+    .item-price {
+        color: white;
+    }
+    .item-details {
+        flex: 1;
+        font-style: italic;
+        margin: 10px;
+        padding: 0 1rem;
+        margin-bottom: 0;
+    }
+    .item-action {
+        color: white;
+        font-weight: bold;
+        background: $dark-main;
+        padding: 0 1.5rem;
+        margin-bottom: 10px;
+        border: none;
+        &:hover {
+            background: rgb(101, 168, 130);
+        }
+        &:active {
+            background: rgb(145, 189, 169);
+        }
+    }
+}

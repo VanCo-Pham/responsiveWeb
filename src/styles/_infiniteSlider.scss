@@ -1,0 +1,22 @@
+.infiniteSlider {
+    background: lightblue;
+    height: 100vh;
+    div {
+        height: 80%;
+        // background: lightcoral;
+        padding: 5rem;
+    }
+    .Infi-slide1 {
+        background-image: url('../images/seed.jpg');
+        // display: block;
+    }
+    .Infi-slide2 {
+        background-image: url('../images/pots.jpg');
+    }
+    .Infi-slide3 {
+        background-image: url('../images/sale.jpg');
+    }
+    .Infi-slide4 {
+        background-image: url('../images/orchid.jpg');
+    }
+}

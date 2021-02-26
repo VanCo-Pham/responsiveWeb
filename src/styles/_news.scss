@@ -1,0 +1,82 @@
+@import 'color';
+.news {
+    background: white;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 3px 3px 5px silver;
+
+    // padding: 1rem;
+    &-title {
+        width: 100%;
+        border-left: 5px solid green;
+        padding: 1vh;
+        font-size: 1.5rem;
+    }
+    hr {
+        padding: 1px;
+    }
+    &-grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        // margin: 0.5rem;
+        // background: red;
+        overflow: hidden;
+        &-item {
+            padding: 10px;
+            background: $middle;
+            // min-height: 65vh;
+            color: $light-main;
+            display: flex;
+            flex-direction: column;
+            // flex-wrap: wrap;
+            width: 100%;
+            cursor: pointer;
+            h2 {
+                text-align: center;
+                padding-top: 1rem;
+            }
+            .threeDots {
+                overflow: hidden;
+                display: block;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                // height: 20vh;
+                width:100%; //change based on when you want the dots to appear
+            }
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                
+                &:hover {
+                    transform: scaleX(1.05) scaleY(1.05);
+                }
+            }
+        }
+    }
+    &-readmore {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    // .right-item {
+    //     // max-width: 500px;   
+    //     // flex-basis: 100%;
+    // }
+    .news-grid {
+
+        grid-template-columns: unset!important;
+    }
+    .news-grid-item {
+        // grid-auto-rows: auto;
+        // background: red;
+        // width: auto;
+        min-height: unset;
+        h2 {
+            font-size: 1rem;
+        }
+    }
+}
