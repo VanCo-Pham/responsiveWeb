@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/responsiveWeb/static/css/main.f0588d90.chunk.css",
+    "main.css": "/responsiveWeb/static/css/main.3f41d2e6.chunk.css",
     "main.js": "/responsiveWeb/static/js/main.c2cd0202.chunk.js",
     "main.js.map": "/responsiveWeb/static/js/main.c2cd0202.chunk.js.map",
     "runtime-main.js": "/responsiveWeb/static/js/runtime-main.43ee5164.js",
@@ -10,7 +10,7 @@
     "static/js/3.e3760050.chunk.js": "/responsiveWeb/static/js/3.e3760050.chunk.js",
     "static/js/3.e3760050.chunk.js.map": "/responsiveWeb/static/js/3.e3760050.chunk.js.map",
     "index.html": "/responsiveWeb/index.html",
-    "static/css/main.f0588d90.chunk.css.map": "/responsiveWeb/static/css/main.f0588d90.chunk.css.map",
+    "static/css/main.3f41d2e6.chunk.css.map": "/responsiveWeb/static/css/main.3f41d2e6.chunk.css.map",
     "static/js/2.6565489f.chunk.js.LICENSE.txt": "/responsiveWeb/static/js/2.6565489f.chunk.js.LICENSE.txt",
     "static/media/car_02.d0ec57af.jpg": "/responsiveWeb/static/media/car_02.d0ec57af.jpg",
     "static/media/logo.d166e372.png": "/responsiveWeb/static/media/logo.d166e372.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.43ee5164.js",
     "static/js/2.6565489f.chunk.js",
-    "static/css/main.f0588d90.chunk.css",
+    "static/css/main.3f41d2e6.chunk.css",
     "static/js/main.c2cd0202.chunk.js"
   ]
 }
